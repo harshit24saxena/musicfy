@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair&family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+/* navbar */
+nav{
+    display: flex;
+    gap: 30%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    align-items: center;  
+    gap: 20px;
+    padding: 5%;
+    list-style: none;
+    color: white;
+}
+.logo{
+    display: inline-block;
+    height: 50px;
+}
+.brandName{
+    position: relative;
+    right: 35%;
+    color: white;
+}
+
+
+/* display container */
+.container{
+    height: 75vh;
+    width: 80vw;
+    margin: 20px auto;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15px ;
+    padding: 10px;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.songItem{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(70, 71, 71);
+    width: 25%;
+    border-radius: 20px;
+}
+.songItem img{
+    margin: 5px 2px;
+    width: 40px;
+    border-radius: 50%;
+}
+.songListPlay{
+    height: fit-content;
+}
+.songListPlay i{
+    cursor: pointer;
+    height: 0;
+    margin: auto 7px;
+}
+
+/* control panel */
+.controlContainer{
+
+    position: sticky;
+}
+.controlPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 35px;
+    background-color: black;
+}
+#progressBar{
+    width: 85vw;
+}
+.control{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.fa-solid{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+}
+.songInfo img{
+    width: 43px;
+    position: absolute;
+    left: 8vw;
+}
+.songInfo{
+    color: aliceblue;
+}
+#gif{
+    opacity: 0;
+    transition: ease-in 0.3s;
+}
+pre{
+    position: absolute;
+    left: 11vw;
+}

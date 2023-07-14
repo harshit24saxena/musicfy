@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>musicfy-spotify clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav>
+      <img class="logo" src="logo.png" alt="spotify" />
+      <h3 class="brandName">musicfy</h5>
+      <ul>
+        <li>home</li>
+        <li>about</li>
+      </ul>
+    </nav>
+
+
+    <!-- display container -->
+    <div class="container">
+      <div class="songList">
+        <h1>song List name</h1>
+      </div>
+        <div class="songItem">
+          <img src="covers/1.jpg" alt="">
+          <span>hero tonight</span>
+          <span class="songListPlay"><span>03:28</span><i class="fa-solid fa-circle-play"></i></span>
+        </div>
+      <div class="songBanner">
+        <img src="" alt="">
+      </div>
+    </div>
+
+
+    <!-- control panel -->
+    <div class="controlContainer">
+      <div class="controlPanel">
+        <input type="range" name="progressBar" id="progressBar" min="0" value="0" max="100">
+      </div>
+      <div class="control">
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-circle-play" id="playButton"></i>
+        <i class="fa-solid fa-forward"></i>
+        <div class="songInfo">
+          <img id="gif" src="playing.gif" alt=""><pre>  hero tonight</pre>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/55eca10c90.js" crossorigin="anonymous"></script>
+    <script src="index.js" charset="UTF-8"></script>
+  </body>
+</html>
